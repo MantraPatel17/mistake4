@@ -79,7 +79,7 @@ function setup(){
   hero.scale = 0.5;
   hero.visible = false
 
-  playButton = createSprite(displayWidth/2-40,displayHeight/2+50,20,20);
+  playButton = createSprite(displayWidth/2-40,displayHeight/2+120,20,20);
   playButton.addImage(playImg);
   playButton.scale = 0.6
 
@@ -175,14 +175,19 @@ function spawnVDrone(){
     }
 }
 function form(){
+  textSize(35);
+  fill("black")
+  text("CyberYear_2099",displayWidth/2-120 ,50);
+
   textSize(20);
   fill("black")
-  text("CyberYear_2099",displayWidth/2-120 ,40);
-  text("Hi, Welcome to CyberYear_2099",displayWidth/2 - 270 ,80);
-  text("You, Mr. John Marcus, are a cyber human in year 2099.",displayWidth/2 -270, 120);
-  text("Mr. Doom the psychic robot is trying to rule over the World",displayWidth/2 - 270, 160);
-  text("Fight from the drones and save the World from him.",displayWidth/2 -270, 200);
-  text("Press space to shoot and up and down arrow key to",displayWidth/2-270, 240 );
-  text("the drone up and down.",displayWidth/2-270, 280);
-  text("SO BEST OF LUCK !!!",displayWidth/2-150, 320 );
+  text("Hi, Welcome to CyberYear_2099",displayWidth/2 - 270 ,140);
+  text("You, Mr. John Marcus, are a cyber human in year 2099.",displayWidth/2 -270, 180);
+  text("Mr. Doom the psychic robot is trying to rule over the World",displayWidth/2 - 270, 220);
+  text("Fight from the drones and save the World from him.",displayWidth/2 -270, 260);
+  text("Press space to shoot and up and down arrow key to",displayWidth/2-270, 300 );
+  text("the drone up and down and be safe from the drones.",displayWidth/2-270, 340);
+
+  textSize(25)
+  text("SO BEST OF LUCK !!!",displayWidth/2-150, 420 );
 }
